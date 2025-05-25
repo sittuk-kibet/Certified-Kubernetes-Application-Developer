@@ -18,3 +18,30 @@ Apply any configuration file:
 
 ```bash
 kubectl apply -f <filename>.yaml
+```
+
+
+
+## Delete a configuration
+``` bash
+kubectl delete -f <filename>.yaml
+```
+## Dashboard Access
+### Start the Kubernetes Dashboard
+``` bash
+microk8s dashboard-proxy
+```
+## Then open the following URL in your browser:
+
+```cpp
+https://127.0.0.1:10443
+```
+## Log in using the token provided in the terminal after running the proxy command.
+
+
+
+
+
+
+
+
