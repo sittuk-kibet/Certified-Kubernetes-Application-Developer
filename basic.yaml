@@ -4,11 +4,12 @@ kind: Pod
 metadata:
   name: basicpod
   labels:
-    type: webserver  
-  type: NodePort    
+    type: webserver    
 spec:
   containers:
     - name: webcont
       image: nginx
       ports:
         - containerPort: 80
+    - name: fdlogger
+      image: fluentd
